@@ -1,0 +1,24 @@
+{
+  "name": "robomod",
+  "version": "1.0.0",
+  "description": "P2P network infastructure for rapid module update and spreading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanw1103/robomod.git"
+  },
+  "keywords": [
+    "p2p",
+    "network",
+    "nodejs"
+  ],
+  "author": "nanw1103",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nanw1103/robomod/issues"
+  },
+  "homepage": "https://github.com/nanw1103/robomod#readme"
+}
