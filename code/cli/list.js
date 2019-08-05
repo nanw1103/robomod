@@ -39,9 +39,9 @@ async function main() {
 
 	//for (let id of distance1Nodes)
 	//	rows.push({id})
-	let stat = await local.core.stat()	//trigger BPS calc
+	await local.core.stat()	//trigger BPS calc
 	await delay(2100)
-	stat = await local.core.stat()
+	let stat = await local.core.stat()
 	let nodeUpTime = now - myInst.start
 	let systemUptime = formatTimespan(now - myInst.genesis)
 

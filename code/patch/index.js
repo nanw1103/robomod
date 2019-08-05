@@ -32,7 +32,8 @@ async function patchImpl() {
 		if (record)
 			continue
 
-		changed |= await applyPatch(name)
+		if (await applyPatch(name))
+			changed = true
 	}
 	return changed
 }

@@ -29,6 +29,8 @@ function updateConfig(name, value) {
 	if (v === undefined)
 		return false
 
+	if (value !== '')
+		value = JSON.parse(value)
 	deepSet(config, name, value)
 
 	const updatedText = 'module.exports = ' + _stringify(config)
@@ -38,7 +40,7 @@ function updateConfig(name, value) {
 
 function _stringify(obj) {
 	return JSON.stringify(obj, null, 4)
-		.replace(/"([^(")"]+)":/g,'$1:')
+		.replace(/"([^(")]+)":/g,'$1:')
 		.replace(/"/g, '\'')
 }
 

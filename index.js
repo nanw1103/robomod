@@ -1,1 +1,1 @@
-console.log('heya')
+require('./forever.js')
