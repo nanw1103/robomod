@@ -1,0 +1,12 @@
+#!/bin/sh
+BASEDIR="$( cd "$(dirname "$0")" ; pwd -P )"
+export ROBOMOD_DIR="$( cd "$BASEDIR/../.." ; pwd -P )"
+cd $BASEDIR
+
+if [ "$#" -eq 0 ]; then
+    PARAMS=usage.js
+else
+    PARAMS=$*
+fi
+
+node $RBM_NODE_ARGS --throw-deprecation --trace-warnings --use_strict $PARAMS

@@ -1,0 +1,27 @@
+{
+  "name": "robomod",
+  "version": "1.0.0",
+  "description": "Test bed for p2p infra",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.13",
+    "axios": "^0.18.0",
+    "connect": "^3.6.6",
+    "fs-extra": "^7.0.1",
+    "newheelog": "^0.0.4",
+    "otherlib": "^1.0.14",
+    "quick-lru": "^2.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "robomod"
+  ],
+  "author": "nanw1103",
+  "license": "ISC"
+}

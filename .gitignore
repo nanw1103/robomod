@@ -57,3 +57,13 @@ typings/
 # dotenv environment variables file
 .env
 
+log/
+data/
+update/
+tools/*.pem
+tools/*.ppk
+**/.dir-hash.json
+**/.dir-hash.json.gz
+
+*.gz
+code/package-lock.json
